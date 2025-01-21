@@ -647,7 +647,7 @@ else
 	Cryptic.Subtitle.Size = UDim2.new(0.0922835767, 0, 0.0253632143, 0)
 	Cryptic.Subtitle.ZIndex = 3
 	Cryptic.Subtitle.Font = Enum.Font.SourceSansItalic
-	Cryptic.Subtitle.Text = "Version: deposible!"
+	Cryptic.Subtitle.Text = "Version: 2.655.1095"
 	Cryptic.Subtitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Cryptic.Subtitle.TextScaled = true
 	Cryptic.Subtitle.TextSize = 14.000
