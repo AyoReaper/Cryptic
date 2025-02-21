@@ -251,6 +251,7 @@ MainShell.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainShell.BorderSizePixel = 0
 MainShell.Position = UDim2.new(0.5, 0, 0.5, 0)
 MainShell.Size = UDim2.new(0, 1200, 0, 600)
+MainShell.Visible = false
 
 UICorner.CornerRadius = UDim.new(0, 4)
 UICorner.Parent = MainShell
