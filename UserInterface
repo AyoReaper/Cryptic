@@ -64,6 +64,8 @@ CustomProtectPreloadAsync({
     "rbxassetid://127587644524395",
     "rbxasset://fonts/SourceSansPro-Regular.ttf",
     "rbxassetid://125929038740515",
+	"rbxassetid://101732683555903",
+	"rbxassetid://124940220756135"
 })
 
 local IntegratedScriptsLib = {
@@ -1738,7 +1740,6 @@ function Library:ReloadLocalScripts(s)
 		Rename.Image = "rbxassetid://101732683555903"
 		Rename.MouseButton1Click:Connect(function()
 			if TextBox.Visible then
-				print"pressed"
 				local NewName = ""
 				
 				if TextBox.PlaceholderText == TextBox.Text then
