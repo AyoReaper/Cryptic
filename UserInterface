@@ -323,7 +323,6 @@ Editor.BackgroundTransparency = 1.000
 Editor.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Editor.BorderSizePixel = 0
 Editor.Size = UDim2.new(1, 0, 1, 0)
-Editor.Visible = false
 
 Decor_4.Name = "Decor"
 Decor_4.Parent = Editor
@@ -600,6 +599,7 @@ SearchScripts.BackgroundTransparency = 1.000
 SearchScripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SearchScripts.BorderSizePixel = 0
 SearchScripts.Size = UDim2.new(1, 0, 1, 0)
+SearchScripts.Visible = false
 
 Previous.Name = "Previous"
 Previous.Parent = SearchScripts
@@ -650,8 +650,8 @@ ScrollingFrame_3.BackgroundTransparency = 1.000
 ScrollingFrame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame_3.BorderSizePixel = 0
 ScrollingFrame_3.Size = UDim2.new(1, 0, 1, 0)
+ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 2.79999995, 0)
 ScrollingFrame_3.ScrollBarThickness = 2
-ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 2.8, 0)
 
 UIPadding_3.Parent = ScrollingFrame_3
 UIPadding_3.PaddingTop = UDim.new(0, 3)
@@ -659,7 +659,7 @@ UIPadding_3.PaddingTop = UDim.new(0, 3)
 UIGridLayout_2.Parent = ScrollingFrame_3
 UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout_2.CellSize = UDim2.new(0.328999996, 0, 0.163, 0)
+UIGridLayout_2.CellSize = UDim2.new(0.328999996, 0, 0.163000003, 0)
 
 Next.Name = "Next"
 Next.Parent = SearchScripts
@@ -1772,6 +1772,7 @@ coroutine.resume(coroutine.create(function()
 	newUI.MainShell.Executor.Execute.MouseButton1Click:Connect(function()
 		run(newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text)
 	end)
+	--newUI.MainShell.tabs["Search Scripts"].Frame.Frame.ScrollingF
 	newUI.MainShell.Executor.Clear.MouseButton1Click:Connect(function()
 		newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text = ""
 	end)
