@@ -1696,11 +1696,11 @@ function Library:ReloadLocalScripts()
 	end
 	for _, a in pairs(newUI.MainShell.tabs.Editor.Frame.ScrollingFrame:GetChildren()) do
 		if a:IsA('TextButton') then
-			y += a.AbsoluteSize.Y
+			y += a.AbsoluteSize.Y + 2
 		end
 	end
 
-	newUI.MainShell.tabs.Editor.Frame.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, y)
+	newUI.MainShell.tabs.Editor.Frame.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, y+2)
 end
 
 -- Load All Dependencies
