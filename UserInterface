@@ -1660,7 +1660,7 @@ function Library:ReloadLocalScripts(s)
 	end
 	for _, a in pairs(CustomListFile("Cryptic/Local Scripts")) do
 		local filename = tostring(a)
-		local grabbed = filename:match('Cryptic\\Local Scripts\\(.*)') or filename
+		local grabbed = filename:match('Cryptic\\Local Scripts\\(.*)') or filename:match('Cryptic/Local Scripts/(.*)') or filename
 
 		if s then
 			local Search = string.lower(s)
@@ -1725,7 +1725,12 @@ function Library:ReloadLocalScripts(s)
 		Delete.Image = "rbxassetid://124940220756135"
 		Delete.ImageColor3 = Color3.fromRGB(255, 0, 0)
 		Delete.MouseButton1Click:Connect(function()
-			CustomDelFile("Cryptic/Local Scripts/"..Script.Text)
+			if filename:match('Cryptic\\Local Scripts\\(.*)') or filename:match('Cryptic/Local Scripts/(.*)') then
+				CustomDelFile(filename)
+			else
+				CustomDelFile("Cryptic/Local Scripts/"..Script.Text)
+			end
+
 			Library:ReloadLocalScripts()
 		end)
 
@@ -1758,7 +1763,12 @@ function Library:ReloadLocalScripts(s)
 
 					if CustomIsFile("Cryptic/Local Scripts/"..TextBox.PlaceholderText) then
 						CustomWrite("Cryptic/Local Scripts/"..NewName, CustomRead("Cryptic/Local Scripts/"..TextBox.PlaceholderText))
-						CustomDelFile("Cryptic/Local Scripts/"..TextBox.PlaceholderText)
+
+						if filename:match('Cryptic\\Local Scripts\\(.*)') or filename:match('Cryptic/Local Scripts/(.*)') then
+							CustomDelFile(filename)
+						else
+							CustomDelFile("Cryptic/Local Scripts/"..TextBox.PlaceholderText)
+						end
 						Library:ReloadLocalScripts()
 					end
 				end
