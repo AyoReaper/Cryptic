@@ -1670,10 +1670,13 @@ function Library:ReloadLocalScripts(s)
 
 		local Script = Instance.new("TextButton")
 		local UICorner = Instance.new("UICorner")
+		local TextBox = Instance.new("TextBox")
 		local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+		local Delete = Instance.new("ImageButton")
+		local Rename = Instance.new("ImageButton")
 
 		Script.Name = "Script"
-		Script.Parent = newUI.MainShell.tabs.Editor.Frame.ScrollingFrame
+		Script.Parent = CrypticNew.MainShell.tabs.Editor.Frame.ScrollingFrame
 		Script.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 		Script.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Script.BorderSizePixel = 0
@@ -1684,15 +1687,92 @@ function Library:ReloadLocalScripts(s)
 		Script.TextScaled = true
 		Script.TextSize = 12.000
 		Script.TextWrapped = true
-
+		
 		UICorner.CornerRadius = UDim.new(0, 2)
 		UICorner.Parent = Script
 
-		UITextSizeConstraint.Parent = Script
+		TextBox.Parent = Script
+		TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextBox.BackgroundTransparency = 1.000
+		TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextBox.BorderSizePixel = 0
+		TextBox.Size = UDim2.new(1, 0, 1, 0)
+		TextBox.ClearTextOnFocus = false
+		TextBox.Font = Enum.Font.SourceSansBold
+		TextBox.Text = ""
+		TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextBox.TextScaled = true
+		TextBox.TextSize = 14.000
+		TextBox.TextWrapped = true
+		TextBox.Visible = false
+		TextBox.Active = false
+
+		UITextSizeConstraint.Parent = TextBox
 		UITextSizeConstraint.MaxTextSize = 25
 
+		Delete.Name = "Delete"
+		Delete.Parent = Script
+		Delete.AnchorPoint = Vector2.new(0.5, 0.5)
+		Delete.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Delete.BackgroundTransparency = 1.000
+		Delete.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Delete.BorderSizePixel = 0
+		Delete.Position = UDim2.new(0.959999979, 0, 0.5, 0)
+		Delete.Size = UDim2.new(0.0649999976, 0, 0.649999976, 0)
+		Delete.Image = "rbxassetid://124940220756135"
+		Delete.ImageColor3 = Color3.fromRGB(255, 0, 0)
+		Delete.MouseButton1Click:Connect(function()
+			CustomDelFile("Cryptic/Local Scripts/"..Script.Text)
+			Library:ReloadLocalScripts()
+		end)
+
+		Rename.Name = "Rename"
+		Rename.Parent = Script
+		Rename.AnchorPoint = Vector2.new(0.5, 0.5)
+		Rename.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Rename.BackgroundTransparency = 1.000
+		Rename.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Rename.BorderSizePixel = 0
+		Rename.Position = UDim2.new(0.879999995, 0, 0.5, 0)
+		Rename.Size = UDim2.new(0.0649999976, 0, 0.649999976, 0)
+		Rename.Image = "rbxassetid://101732683555903"
+		Rename.MouseButton1Click:Connect(function()
+			if TextBox.Visible then
+				print"pressed"
+				local NewName = ""
+				
+				if TextBox.PlaceholderText == TextBox.Text then
+					Library:ReloadLocalScripts()
+				else
+					if TextBox.Text ~= "" then
+						if TextBox.Text:match('.lua') and TextBox.Text ~= ".lua" then
+							NewName = TextBox.Text
+						else
+							NewName = TextBox.Text..".lua"
+						end
+					else
+						NewName = "Script #"..math.random(1000, 10000)..".lua"
+					end
+
+					if CustomIsFile("Cryptic/Local Scripts/"..TextBox.PlaceholderText) then
+						CustomWrite("Cryptic/Local Scripts/"..NewName, CustomRead("Cryptic/Local Scripts/"..TextBox.PlaceholderText))
+						CustomDelFile("Cryptic/Local Scripts/"..TextBox.PlaceholderText)
+						Library:ReloadLocalScripts()
+					end
+				end
+			else
+				TextBox.PlaceholderText = Script.Text
+				TextBox.Visible = true
+				TextBox.Active = true
+
+				Script.Text = ""
+				Script.Active = false
+				Script.AutoButtonColor = false
+			end
+		end)
+
 		Script.MouseButton1Click:Connect(function()
-			newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text = readfile(a)
+			newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text = CustomRead(a)
 		end)
 	end
 	for _, a in pairs(newUI.MainShell.tabs.Editor.Frame.ScrollingFrame:GetChildren()) do
@@ -1718,8 +1798,8 @@ coroutine.resume(coroutine.create(function()
 		Library:NewScript(newUI.MainShell.tabs["Local Scripts"].ScrollingFrame, script.name, script.description, script.key, script.img, script.code)
 	end
 
-	if CustomIsFile('Cryptic/Main Tab.lua') and readfile('Cryptic/Main Tab.lua')~=nil then
-		TextBox_2.Text = readfile('Cryptic/Main Tab.lua')
+	if CustomIsFile('Cryptic/Main Tab.lua') and CustomRead('Cryptic/Main Tab.lua')~=nil then
+		TextBox_2.Text = CustomRead('Cryptic/Main Tab.lua')
 	end
 end))
 -- Moving UI & Toggling
@@ -1804,10 +1884,9 @@ coroutine.resume(coroutine.create(function()
 		Library:ReloadLocalScripts(newUI.MainShell.tabs.Editor.Search.TextBox.Text)
 	end)
 	TextBox_2.FocusLost:Connect(function()
-		writefile('Cryptic/Main Tab.lua', TextBox_2.Text)
+		CustomWrite('Cryptic/Main Tab.lua', TextBox_2.Text)
 	end)
 end))
-
 -- Miscellaneous
 coroutine.resume(coroutine.create(function()
 
