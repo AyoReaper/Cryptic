@@ -1659,7 +1659,8 @@ function Library:ReloadLocalScripts(s)
 		end
 	end
 	for _, a in pairs(CustomListFile("Cryptic/Local Scripts")) do
-		local grabbed = a:match('Cryptic\\Local Scripts\\(.*)') or tostring(a)
+		local filename = tostring(a)
+		local grabbed = filename:match('Cryptic\\Local Scripts\\(.*)') or filename
 
 		if s then
 			local Search = string.lower(s)
