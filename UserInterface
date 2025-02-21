@@ -1648,7 +1648,7 @@ function Library:GlobalScript(page)
 
     Searchtbl.Loading = false
 end
-function Library:ReloadLocalScripts()
+function Library:ReloadLocalScripts(s)
 	local y = 0
 
 	for _, a in pairs(newUI.MainShell.tabs.Editor.Frame.ScrollingFrame:GetChildren()) do
@@ -1657,6 +1657,17 @@ function Library:ReloadLocalScripts()
 		end
 	end
 	for _, a in pairs(CustomListFile("Cryptic/Local Scripts")) do
+		local grabbed = a:match('Cryptic\\Local Scripts\\(.*)')
+
+		if s then
+			local Search = string.lower(s)
+
+			if Search == string.lower(grabbed) or string.sub(string.lower(grabbed), 1, string.len(Search)) == Search then
+			else
+				continue
+			end
+		end
+
 		local Script = Instance.new("TextButton")
 		local UICorner = Instance.new("UICorner")
 		local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
@@ -1668,7 +1679,7 @@ function Library:ReloadLocalScripts()
 		Script.BorderSizePixel = 0
 		Script.Size = UDim2.new(0, 200, 0, 50)
 		Script.Font = Enum.Font.SourceSansBold
-		Script.Text = a:match('Cryptic\\Local Scripts\\(.*)')
+		Script.Text = grabbed
 		Script.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Script.TextScaled = true
 		Script.TextSize = 12.000
@@ -1772,7 +1783,6 @@ coroutine.resume(coroutine.create(function()
 	newUI.MainShell.Executor.Execute.MouseButton1Click:Connect(function()
 		run(newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text)
 	end)
-	--newUI.MainShell.tabs["Search Scripts"].Frame.Frame.ScrollingF
 	newUI.MainShell.Executor.Clear.MouseButton1Click:Connect(function()
 		newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text = ""
 	end)
@@ -1789,6 +1799,10 @@ coroutine.resume(coroutine.create(function()
 		CustomWrite("Cryptic/Local Scripts/Script #"..tostring(#CustomListFile("Cryptic/Local Scripts"))..".lua", newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text)
 
 		Library:ReloadLocalScripts()
+	end)
+	newUI.MainShell.tabs.Editor.Search.TextBox:GetPropertyChangedSignal('Text'):Connect(function()
+		print'test'
+		Library:ReloadLocalScripts(newUI.MainShell.tabs.Editor.Search.TextBox.Text)
 	end)
 	TextBox_2.FocusLost:Connect(function()
 		writefile('Cryptic/Main Tab.lua', TextBox_2.Text)
