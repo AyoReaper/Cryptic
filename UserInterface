@@ -1801,7 +1801,6 @@ coroutine.resume(coroutine.create(function()
 		Library:ReloadLocalScripts()
 	end)
 	newUI.MainShell.tabs.Editor.Search.TextBox:GetPropertyChangedSignal('Text'):Connect(function()
-		print'test'
 		Library:ReloadLocalScripts(newUI.MainShell.tabs.Editor.Search.TextBox.Text)
 	end)
 	TextBox_2.FocusLost:Connect(function()
