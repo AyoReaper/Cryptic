@@ -485,12 +485,12 @@ TextBox_2.Size = UDim2.new(1, 0, 1, 0)
 TextBox_2.ClearTextOnFocus = false
 TextBox_2.Font = Enum.Font.SourceSans
 TextBox_2.MultiLine = true
-TextBox_2.Text = "--[[\\n Founder: reaperscripts\\n UI Dev: deposible\\n\\n Best Executor: Cryptic\\n]]\\n\\nprint('Cryptic Forever the #1 Executor')"
 TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_2.TextSize = 14.000
 TextBox_2.TextWrapped = true
 TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
 TextBox_2.TextYAlignment = Enum.TextYAlignment.Top
+TextBox_2.Text = "--[[\n   Founder: reaperscripts\n   UI Dev: deposible\n   Best Executor: Cryptic\n]]\n\nprint('Cryptic Forever the #1 Executor')"
 
 UITextSizeConstraint_2.Parent = TextBox_2
 UITextSizeConstraint_2.MaxTextSize = 18
@@ -1699,6 +1699,14 @@ coroutine.resume(coroutine.create(function()
 
 	Library:CheckFiles()
 	Library:ReloadLocalScripts()
+
+	if CustomIsFile('Cryptic/Main Tab.lua') and readfile('Cryptic/Main Tab.lua')~=nil then
+		TextBox_2.Text = readfile('Cryptic/Main Tab.lua')
+	end
+
+	TextBox_2.FocusLost:Connect(function()
+		writefile('Cryptic/Main Tab.lua', TextBox_2.Text)
+	end)
 end))
 -- Moving UI & Toggling
 coroutine.resume(coroutine.create(function()
