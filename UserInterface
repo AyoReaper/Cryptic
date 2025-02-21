@@ -82,6 +82,7 @@ local Decor = Instance.new("Frame")
 local Decor_2 = Instance.new("Frame")
 local Decor_3 = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local Logo = Instance.new("ImageLabel")
 local tabs = Instance.new("Frame")
 local Editor = Instance.new("Frame")
@@ -104,7 +105,7 @@ local TextLabel = Instance.new("TextLabel")
 local Edit = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local TextBox_2 = Instance.new("TextBox")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 local Tabs = Instance.new("ScrollingFrame")
 local UIPadding_2 = Instance.new("UIPadding")
 local UIListLayout = Instance.new("UIListLayout")
@@ -139,7 +140,7 @@ local TextBox_3 = Instance.new("TextBox")
 local Search2 = Instance.new("Frame")
 local UICorner_15 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
-local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 local LocalScripts = Instance.new("Frame")
 local ScrollingFrame_4 = Instance.new("ScrollingFrame")
 local UIGridLayout_3 = Instance.new("UIGridLayout")
@@ -158,22 +159,22 @@ local Executor = Instance.new("ScrollingFrame")
 local UIGridLayout_5 = Instance.new("UIGridLayout")
 local Execute = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
-local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 local Clear = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local Copy = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
-local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 local Paste = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
-local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
 local ExecuteClipboard = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
-local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
 local SaveAsLocalScript = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
-local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Notifier = Instance.new("Frame")
 local UIListLayout_2 = Instance.new("UIListLayout")
@@ -185,9 +186,9 @@ local UICorner_23 = Instance.new("UICorner")
 local CrypTB = Instance.new("ImageLabel")
 local TextButton_2 = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
-local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
-local TextLabel_5 = Instance.new("TextLabel")
 local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local TextLabel_5 = Instance.new("TextLabel")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
 local shadowHolder = Instance.new("Frame")
 local umbraShadow = Instance.new("ImageLabel")
 local penumbraShadow = Instance.new("ImageLabel")
@@ -204,7 +205,7 @@ local UICorner_24 = Instance.new("UICorner")
 local UICorner_25 = Instance.new("UICorner")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 
-CrypticNew.Name = "Executor Consept"
+CrypticNew.Name = "CrypticNew"
 CrypticNew.Parent = CoreGui
 CrypticNew.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 CrypticNew.DisplayOrder = 435823454
@@ -255,7 +256,12 @@ Title.Size = UDim2.new(1, 0, 0.0766666681, 0)
 Title.Font = Enum.Font.SourceSansBold
 Title.Text = "Cryptic"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
 Title.TextSize = 18.000
+Title.TextWrapped = true
+
+UITextSizeConstraint.Parent = Title
+UITextSizeConstraint.MaxTextSize = 30
 
 Logo.Name = "Logo"
 Logo.Parent = MainShell
@@ -456,9 +462,9 @@ TextBox_2.TextWrapped = true
 TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
 TextBox_2.TextYAlignment = Enum.TextYAlignment.Top
 
-UITextSizeConstraint.Parent = TextBox_2
-UITextSizeConstraint.MaxTextSize = 18
-UITextSizeConstraint.MinTextSize = 15
+UITextSizeConstraint_2.Parent = TextBox_2
+UITextSizeConstraint_2.MaxTextSize = 18
+UITextSizeConstraint_2.MinTextSize = 15
 
 Tabs.Name = "Tabs"
 Tabs.Parent = Edit
@@ -709,8 +715,8 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
-UITextSizeConstraint_2.Parent = TextButton
-UITextSizeConstraint_2.MaxTextSize = 20
+UITextSizeConstraint_3.Parent = TextButton
+UITextSizeConstraint_3.MaxTextSize = 20
 
 LocalScripts.Name = "Local Scripts"
 LocalScripts.Parent = tabs
@@ -857,8 +863,8 @@ Execute.TextWrapped = true
 UICorner_16.CornerRadius = UDim.new(0, 2)
 UICorner_16.Parent = Execute
 
-UITextSizeConstraint_3.Parent = Execute
-UITextSizeConstraint_3.MaxTextSize = 25
+UITextSizeConstraint_4.Parent = Execute
+UITextSizeConstraint_4.MaxTextSize = 25
 
 Clear.Name = "Clear"
 Clear.Parent = Executor
@@ -876,8 +882,8 @@ Clear.TextWrapped = true
 UICorner_17.CornerRadius = UDim.new(0, 2)
 UICorner_17.Parent = Clear
 
-UITextSizeConstraint_4.Parent = Clear
-UITextSizeConstraint_4.MaxTextSize = 25
+UITextSizeConstraint_5.Parent = Clear
+UITextSizeConstraint_5.MaxTextSize = 25
 
 Copy.Name = "Copy"
 Copy.Parent = Executor
@@ -895,8 +901,8 @@ Copy.TextWrapped = true
 UICorner_18.CornerRadius = UDim.new(0, 2)
 UICorner_18.Parent = Copy
 
-UITextSizeConstraint_5.Parent = Copy
-UITextSizeConstraint_5.MaxTextSize = 25
+UITextSizeConstraint_6.Parent = Copy
+UITextSizeConstraint_6.MaxTextSize = 25
 
 Paste.Name = "Paste"
 Paste.Parent = Executor
@@ -914,8 +920,8 @@ Paste.TextWrapped = true
 UICorner_19.CornerRadius = UDim.new(0, 2)
 UICorner_19.Parent = Paste
 
-UITextSizeConstraint_6.Parent = Paste
-UITextSizeConstraint_6.MaxTextSize = 25
+UITextSizeConstraint_7.Parent = Paste
+UITextSizeConstraint_7.MaxTextSize = 25
 
 ExecuteClipboard.Name = "Execute Clipboard"
 ExecuteClipboard.Parent = Executor
@@ -933,8 +939,8 @@ ExecuteClipboard.TextWrapped = true
 UICorner_20.CornerRadius = UDim.new(0, 2)
 UICorner_20.Parent = ExecuteClipboard
 
-UITextSizeConstraint_7.Parent = ExecuteClipboard
-UITextSizeConstraint_7.MaxTextSize = 25
+UITextSizeConstraint_8.Parent = ExecuteClipboard
+UITextSizeConstraint_8.MaxTextSize = 25
 
 SaveAsLocalScript.Name = "Save As Local Script"
 SaveAsLocalScript.Parent = Executor
@@ -952,8 +958,8 @@ SaveAsLocalScript.TextWrapped = true
 UICorner_21.CornerRadius = UDim.new(0, 2)
 UICorner_21.Parent = SaveAsLocalScript
 
-UITextSizeConstraint_8.Parent = SaveAsLocalScript
-UITextSizeConstraint_8.MaxTextSize = 25
+UITextSizeConstraint_9.Parent = SaveAsLocalScript
+UITextSizeConstraint_9.MaxTextSize = 25
 
 UIAspectRatioConstraint.Parent = MainShell
 UIAspectRatioConstraint.AspectRatio = 2.000
@@ -1040,8 +1046,8 @@ TextLabel_4.TextSize = 17.000
 TextLabel_4.TextWrapped = true
 TextLabel_4.TextYAlignment = Enum.TextYAlignment.Bottom
 
-UITextSizeConstraint_9.Parent = TextLabel_4
-UITextSizeConstraint_9.MaxTextSize = 18
+UITextSizeConstraint_10.Parent = TextLabel_4
+UITextSizeConstraint_10.MaxTextSize = 18
 
 TextLabel_5.Parent = ImageLabel
 TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1059,8 +1065,8 @@ TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 TextLabel_5.TextYAlignment = Enum.TextYAlignment.Top
 
-UITextSizeConstraint_10.Parent = TextLabel_5
-UITextSizeConstraint_10.MaxTextSize = 13
+UITextSizeConstraint_11.Parent = TextLabel_5
+UITextSizeConstraint_11.MaxTextSize = 13
 
 shadowHolder.Name = "shadowHolder"
 shadowHolder.Parent = Notification
