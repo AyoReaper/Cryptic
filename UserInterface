@@ -96,53 +96,52 @@ local Title_2 = Instance.new("TextLabel")
 local Subtitle = Instance.new("TextLabel")
 local Frame = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local Script = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
 local UIGridLayout = Instance.new("UIGridLayout")
 local UIPadding = Instance.new("UIPadding")
-local Script_2 = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local Script = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 local Edit = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local TextBox_2 = Instance.new("TextBox")
-local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local Tabs = Instance.new("ScrollingFrame")
 local UIPadding_2 = Instance.new("UIPadding")
 local UIListLayout = Instance.new("UIListLayout")
 local Tab12 = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 local Tab1 = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local ImageButton = Instance.new("ImageButton")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local ImageButton_2 = Instance.new("ImageButton")
 local SearchScripts = Instance.new("Frame")
 local Previous = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local ImageButton_3 = Instance.new("ImageButton")
 local Frame_2 = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local Frame_3 = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local ScrollingFrame_3 = Instance.new("ScrollingFrame")
 local UIPadding_3 = Instance.new("UIPadding")
 local UIGridLayout_2 = Instance.new("UIGridLayout")
 local Next = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local ImageButton_4 = Instance.new("ImageButton")
 local Search_2 = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local Search_3 = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local TextBox_3 = Instance.new("TextBox")
 local Search2 = Instance.new("Frame")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
-local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 local LocalScripts = Instance.new("Frame")
 local ScrollingFrame_4 = Instance.new("ScrollingFrame")
 local UIGridLayout_3 = Instance.new("UIGridLayout")
@@ -155,72 +154,72 @@ local UIPadding_5 = Instance.new("UIPadding")
 local Editor_2 = Instance.new("ImageButton")
 local Frame_4 = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local Frame_5 = Instance.new("Frame")
 local UIGradient_2 = Instance.new("UIGradient")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local LocalScripts_2 = Instance.new("ImageButton")
 local Frame_6 = Instance.new("Frame")
 local UIGradient_3 = Instance.new("UIGradient")
-local UICorner_18 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
 local Frame_7 = Instance.new("Frame")
 local UIGradient_4 = Instance.new("UIGradient")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local SearchScripts_2 = Instance.new("ImageButton")
 local Frame_8 = Instance.new("Frame")
 local UIGradient_5 = Instance.new("UIGradient")
-local UICorner_20 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
 local Frame_9 = Instance.new("Frame")
 local UIGradient_6 = Instance.new("UIGradient")
-local UICorner_21 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 local Miscellaneous_2 = Instance.new("ImageButton")
 local Frame_10 = Instance.new("Frame")
 local UIGradient_7 = Instance.new("UIGradient")
-local UICorner_22 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local Frame_11 = Instance.new("Frame")
 local UIGradient_8 = Instance.new("UIGradient")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local Settings_2 = Instance.new("ImageButton")
 local Frame_12 = Instance.new("Frame")
 local UIGradient_9 = Instance.new("UIGradient")
-local UICorner_24 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
 local Frame_13 = Instance.new("Frame")
 local UIGradient_10 = Instance.new("UIGradient")
-local UICorner_25 = Instance.new("UICorner")
+local UICorner_24 = Instance.new("UICorner")
 local Executor = Instance.new("ScrollingFrame")
 local Execute = Instance.new("TextButton")
-local UICorner_26 = Instance.new("UICorner")
-local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
-local Clear = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
 local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
-local Copy = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
 local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
-local Paste = Instance.new("TextButton")
-local UICorner_29 = Instance.new("UICorner")
+local Copy = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
 local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
-local ExecuteClipboard = Instance.new("TextButton")
-local UICorner_30 = Instance.new("UICorner")
+local Paste = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
 local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
-local SaveAsLocalScript = Instance.new("TextButton")
-local UICorner_31 = Instance.new("UICorner")
+local ExecuteClipboard = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
 local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local SaveAsLocalScript = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Notifier = Instance.new("Frame")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local UIPadding_6 = Instance.new("UIPadding")
 local Notification = Instance.new("Frame")
-local UICorner_32 = Instance.new("UICorner")
+local UICorner_31 = Instance.new("UICorner")
 local ImageLabel = Instance.new("ImageLabel")
-local UICorner_33 = Instance.new("UICorner")
+local UICorner_32 = Instance.new("UICorner")
 local CrypTB = Instance.new("ImageLabel")
 local TextButton_2 = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
-local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
-local TextLabel_5 = Instance.new("TextLabel")
 local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local TextLabel_5 = Instance.new("TextLabel")
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
 local shadowHolder = Instance.new("Frame")
 local umbraShadow = Instance.new("ImageLabel")
 local penumbraShadow = Instance.new("ImageLabel")
@@ -233,8 +232,8 @@ local Toggle = Instance.new("TextButton")
 local Frame_14 = Instance.new("Frame")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local UIGradient_11 = Instance.new("UIGradient")
+local UICorner_33 = Instance.new("UICorner")
 local UICorner_34 = Instance.new("UICorner")
-local UICorner_35 = Instance.new("UICorner")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 
 CrypticNew.Name = "CrypticNew"
@@ -324,6 +323,7 @@ Editor.BackgroundTransparency = 1.000
 Editor.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Editor.BorderSizePixel = 0
 Editor.Size = UDim2.new(1, 0, 1, 0)
+Editor.Visible = false
 
 Decor_4.Name = "Decor"
 Decor_4.Parent = Editor
@@ -415,21 +415,6 @@ ScrollingFrame.Position = UDim2.new(0, 0, 0.0948275849, 0)
 ScrollingFrame.Size = UDim2.new(1, 0, 0.905172408, 0)
 ScrollingFrame.ScrollBarThickness = 2
 
-Script.Name = "Script"
-Script.Parent = ScrollingFrame
-Script.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Script.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Script.BorderSizePixel = 0
-Script.Size = UDim2.new(0, 200, 0, 50)
-Script.Visible = false
-Script.Font = Enum.Font.SourceSansBold
-Script.Text = "Execute"
-Script.TextColor3 = Color3.fromRGB(255, 255, 255)
-Script.TextSize = 12.000
-
-UICorner_4.CornerRadius = UDim.new(0, 2)
-UICorner_4.Parent = Script
-
 UIGridLayout.Parent = ScrollingFrame
 UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -439,20 +424,25 @@ UIGridLayout.CellSize = UDim2.new(1, -4, 0, 32)
 UIPadding.Parent = ScrollingFrame
 UIPadding.PaddingTop = UDim.new(0, 2)
 
-Script_2.Name = "Script"
-Script_2.Parent = ScrollingFrame
-Script_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Script_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Script_2.BorderSizePixel = 0
-Script_2.Size = UDim2.new(0, 200, 0, 50)
-Script_2.Visible = false
-Script_2.Font = Enum.Font.SourceSansBold
-Script_2.Text = "Execute"
-Script_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Script_2.TextSize = 12.000
+Script.Name = "Script"
+Script.Parent = ScrollingFrame
+Script.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Script.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Script.BorderSizePixel = 0
+Script.Size = UDim2.new(0, 200, 0, 50)
+Script.Visible = false
+Script.Font = Enum.Font.SourceSansBold
+Script.Text = ""
+Script.TextColor3 = Color3.fromRGB(255, 255, 255)
+Script.TextScaled = true
+Script.TextSize = 12.000
+Script.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0, 2)
-UICorner_5.Parent = Script_2
+UICorner_4.CornerRadius = UDim.new(0, 2)
+UICorner_4.Parent = Script
+
+UITextSizeConstraint_3.Parent = Script
+UITextSizeConstraint_3.MaxTextSize = 25
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
@@ -466,8 +456,8 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UITextSizeConstraint_3.Parent = TextLabel
-UITextSizeConstraint_3.MaxTextSize = 25
+UITextSizeConstraint_4.Parent = TextLabel
+UITextSizeConstraint_4.MaxTextSize = 25
 
 Edit.Name = "Edit"
 Edit.Parent = Editor
@@ -504,9 +494,9 @@ TextBox_2.TextWrapped = true
 TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
 TextBox_2.TextYAlignment = Enum.TextYAlignment.Top
 
-UITextSizeConstraint_4.Parent = TextBox_2
-UITextSizeConstraint_4.MaxTextSize = 18
-UITextSizeConstraint_4.MinTextSize = 15
+UITextSizeConstraint_5.Parent = TextBox_2
+UITextSizeConstraint_5.MaxTextSize = 18
+UITextSizeConstraint_5.MinTextSize = 15
 
 Tabs.Name = "Tabs"
 Tabs.Parent = Edit
@@ -535,8 +525,8 @@ Tab12.BorderSizePixel = 0
 Tab12.ClipsDescendants = true
 Tab12.Size = UDim2.new(0, 90, 0.899999976, 0)
 
-UICorner_6.CornerRadius = UDim.new(0, 2)
-UICorner_6.Parent = Tab12
+UICorner_5.CornerRadius = UDim.new(0, 2)
+UICorner_5.Parent = Tab12
 
 TextLabel_2.Parent = Tab12
 TextLabel_2.AnchorPoint = Vector2.new(0, 0.5)
@@ -562,8 +552,8 @@ Tab1.ClipsDescendants = true
 Tab1.Size = UDim2.new(0, 70, 0.899999976, 0)
 Tab1.Visible = false
 
-UICorner_7.CornerRadius = UDim.new(0, 2)
-UICorner_7.Parent = Tab1
+UICorner_6.CornerRadius = UDim.new(0, 2)
+UICorner_6.Parent = Tab1
 
 TextLabel_3.Parent = Tab1
 TextLabel_3.AnchorPoint = Vector2.new(0, 0.5)
@@ -591,8 +581,8 @@ ImageButton.Size = UDim2.new(0, 9, 0, 9)
 ImageButton.Image = "rbxassetid://80114840017452"
 ImageButton.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
-UICorner_8.CornerRadius = UDim.new(0, 2)
-UICorner_8.Parent = ImageButton
+UICorner_7.CornerRadius = UDim.new(0, 2)
+UICorner_7.Parent = ImageButton
 
 ImageButton_2.Parent = Edit
 ImageButton_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
@@ -610,7 +600,6 @@ SearchScripts.BackgroundTransparency = 1.000
 SearchScripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SearchScripts.BorderSizePixel = 0
 SearchScripts.Size = UDim2.new(1, 0, 1, 0)
-SearchScripts.Visible = false
 
 Previous.Name = "Previous"
 Previous.Parent = SearchScripts
@@ -620,8 +609,8 @@ Previous.BorderSizePixel = 0
 Previous.Position = UDim2.new(0.910369098, 0, 0.0178571437, 0)
 Previous.Size = UDim2.new(0.0370000005, 0, 0.0829999968, 0)
 
-UICorner_9.CornerRadius = UDim.new(0, 2)
-UICorner_9.Parent = Previous
+UICorner_8.CornerRadius = UDim.new(0, 2)
+UICorner_8.Parent = Previous
 
 ImageButton_3.Parent = Previous
 ImageButton_3.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -640,8 +629,8 @@ Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0.00790861156, 0, 0.1170635, 0)
 Frame_2.Size = UDim2.new(0.979789078, 0, 0.861111164, 0)
 
-UICorner_10.CornerRadius = UDim.new(0, 2)
-UICorner_10.Parent = Frame_2
+UICorner_9.CornerRadius = UDim.new(0, 2)
+UICorner_9.Parent = Frame_2
 
 Frame_3.Parent = Frame_2
 Frame_3.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -651,8 +640,8 @@ Frame_3.BorderSizePixel = 0
 Frame_3.Position = UDim2.new(0.5, 0, 0.5, 0)
 Frame_3.Size = UDim2.new(1, -2, 1, -2)
 
-UICorner_11.CornerRadius = UDim.new(0, 2)
-UICorner_11.Parent = Frame_3
+UICorner_10.CornerRadius = UDim.new(0, 2)
+UICorner_10.Parent = Frame_3
 
 ScrollingFrame_3.Parent = Frame_3
 ScrollingFrame_3.Active = true
@@ -662,6 +651,7 @@ ScrollingFrame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame_3.BorderSizePixel = 0
 ScrollingFrame_3.Size = UDim2.new(1, 0, 1, 0)
 ScrollingFrame_3.ScrollBarThickness = 2
+ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 2.8, 0)
 
 UIPadding_3.Parent = ScrollingFrame_3
 UIPadding_3.PaddingTop = UDim.new(0, 3)
@@ -669,8 +659,7 @@ UIPadding_3.PaddingTop = UDim.new(0, 3)
 UIGridLayout_2.Parent = ScrollingFrame_3
 UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout_2.CellPadding = UDim2.new(0, 4, 0, 4)
-UIGridLayout_2.CellSize = UDim2.new(0, 181, 0, 100)
+UIGridLayout_2.CellSize = UDim2.new(0.328999996, 0, 0.163, 0)
 
 Next.Name = "Next"
 Next.Parent = SearchScripts
@@ -680,8 +669,8 @@ Next.BorderSizePixel = 0
 Next.Position = UDim2.new(0.950790882, 0, 0.0178571437, 0)
 Next.Size = UDim2.new(0.0369068421, 0, 0.0825214759, 0)
 
-UICorner_12.CornerRadius = UDim.new(0, 2)
-UICorner_12.Parent = Next
+UICorner_11.CornerRadius = UDim.new(0, 2)
+UICorner_11.Parent = Next
 
 ImageButton_4.Parent = Next
 ImageButton_4.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -701,8 +690,8 @@ Search_2.BorderSizePixel = 0
 Search_2.Position = UDim2.new(0.00790871866, 0, 0.0178571437, 0)
 Search_2.Size = UDim2.new(0.780316234, 0, 0.0825214759, 0)
 
-UICorner_13.CornerRadius = UDim.new(0, 2)
-UICorner_13.Parent = Search_2
+UICorner_12.CornerRadius = UDim.new(0, 2)
+UICorner_12.Parent = Search_2
 
 Search_3.Name = "Search"
 Search_3.Parent = Search_2
@@ -713,8 +702,8 @@ Search_3.BorderSizePixel = 0
 Search_3.Position = UDim2.new(0.5, 0, 0.5, 0)
 Search_3.Size = UDim2.new(1, -2, 1, -2)
 
-UICorner_14.CornerRadius = UDim.new(0, 2)
-UICorner_14.Parent = Search_3
+UICorner_13.CornerRadius = UDim.new(0, 2)
+UICorner_13.Parent = Search_3
 
 TextBox_3.Parent = Search_3
 TextBox_3.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -741,8 +730,8 @@ Search2.BorderSizePixel = 0
 Search2.Position = UDim2.new(0.795254827, 0, 0.0178571437, 0)
 Search2.Size = UDim2.new(0.10896305, 0, 0.0830000043, 0)
 
-UICorner_15.CornerRadius = UDim.new(0, 2)
-UICorner_15.Parent = Search2
+UICorner_14.CornerRadius = UDim.new(0, 2)
+UICorner_14.Parent = Search2
 
 TextButton.Parent = Search2
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -757,8 +746,8 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
-UITextSizeConstraint_5.Parent = TextButton
-UITextSizeConstraint_5.MaxTextSize = 20
+UITextSizeConstraint_6.Parent = TextButton
+UITextSizeConstraint_6.MaxTextSize = 20
 
 LocalScripts.Name = "Local Scripts"
 LocalScripts.Parent = tabs
@@ -846,8 +835,8 @@ Frame_4.Size = UDim2.new(1, 0, 1, 0)
 UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient.Parent = Frame_4
 
-UICorner_16.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_16.Parent = Frame_4
+UICorner_15.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_15.Parent = Frame_4
 
 Frame_5.Parent = Editor_2
 Frame_5.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -861,8 +850,8 @@ Frame_5.Size = UDim2.new(1, 0, 1, 0)
 UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient_2.Parent = Frame_5
 
-UICorner_17.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_17.Parent = Frame_5
+UICorner_16.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_16.Parent = Frame_5
 
 LocalScripts_2.Name = "Local Scripts"
 LocalScripts_2.Parent = ButtonsContainer
@@ -886,8 +875,8 @@ Frame_6.Visible = false
 UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient_3.Parent = Frame_6
 
-UICorner_18.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_18.Parent = Frame_6
+UICorner_17.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_17.Parent = Frame_6
 
 Frame_7.Parent = LocalScripts_2
 Frame_7.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -901,8 +890,8 @@ Frame_7.Visible = false
 UIGradient_4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient_4.Parent = Frame_7
 
-UICorner_19.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_19.Parent = Frame_7
+UICorner_18.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_18.Parent = Frame_7
 
 SearchScripts_2.Name = "Search Scripts"
 SearchScripts_2.Parent = ButtonsContainer
@@ -926,8 +915,8 @@ Frame_8.Visible = false
 UIGradient_5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient_5.Parent = Frame_8
 
-UICorner_20.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_20.Parent = Frame_8
+UICorner_19.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_19.Parent = Frame_8
 
 Frame_9.Parent = SearchScripts_2
 Frame_9.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -941,8 +930,8 @@ Frame_9.Visible = false
 UIGradient_6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient_6.Parent = Frame_9
 
-UICorner_21.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_21.Parent = Frame_9
+UICorner_20.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_20.Parent = Frame_9
 
 Miscellaneous_2.Name = "Miscellaneous"
 Miscellaneous_2.Parent = ButtonsContainer
@@ -966,8 +955,8 @@ Frame_10.Visible = false
 UIGradient_7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient_7.Parent = Frame_10
 
-UICorner_22.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_22.Parent = Frame_10
+UICorner_21.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_21.Parent = Frame_10
 
 Frame_11.Parent = Miscellaneous_2
 Frame_11.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -981,8 +970,8 @@ Frame_11.Visible = false
 UIGradient_8.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient_8.Parent = Frame_11
 
-UICorner_23.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_23.Parent = Frame_11
+UICorner_22.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_22.Parent = Frame_11
 
 Settings_2.Name = "Settings"
 Settings_2.Parent = ButtonsContainer
@@ -1006,8 +995,8 @@ Frame_12.Visible = false
 UIGradient_9.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient_9.Parent = Frame_12
 
-UICorner_24.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_24.Parent = Frame_12
+UICorner_23.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_23.Parent = Frame_12
 
 Frame_13.Parent = Settings_2
 Frame_13.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1021,8 +1010,8 @@ Frame_13.Visible = false
 UIGradient_10.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient_10.Parent = Frame_13
 
-UICorner_25.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_25.Parent = Frame_13
+UICorner_24.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_24.Parent = Frame_13
 
 Executor.Name = "Executor"
 Executor.Parent = MainShell
@@ -1048,11 +1037,11 @@ Execute.TextScaled = true
 Execute.TextSize = 12.000
 Execute.TextWrapped = true
 
-UICorner_26.CornerRadius = UDim.new(0, 2)
-UICorner_26.Parent = Execute
+UICorner_25.CornerRadius = UDim.new(0, 2)
+UICorner_25.Parent = Execute
 
-UITextSizeConstraint_6.Parent = Execute
-UITextSizeConstraint_6.MaxTextSize = 25
+UITextSizeConstraint_7.Parent = Execute
+UITextSizeConstraint_7.MaxTextSize = 25
 
 Clear.Name = "Clear"
 Clear.Parent = Executor
@@ -1068,11 +1057,11 @@ Clear.TextScaled = true
 Clear.TextSize = 12.000
 Clear.TextWrapped = true
 
-UICorner_27.CornerRadius = UDim.new(0, 2)
-UICorner_27.Parent = Clear
+UICorner_26.CornerRadius = UDim.new(0, 2)
+UICorner_26.Parent = Clear
 
-UITextSizeConstraint_7.Parent = Clear
-UITextSizeConstraint_7.MaxTextSize = 25
+UITextSizeConstraint_8.Parent = Clear
+UITextSizeConstraint_8.MaxTextSize = 25
 
 Copy.Name = "Copy"
 Copy.Parent = Executor
@@ -1088,11 +1077,11 @@ Copy.TextScaled = true
 Copy.TextSize = 12.000
 Copy.TextWrapped = true
 
-UICorner_28.CornerRadius = UDim.new(0, 2)
-UICorner_28.Parent = Copy
+UICorner_27.CornerRadius = UDim.new(0, 2)
+UICorner_27.Parent = Copy
 
-UITextSizeConstraint_8.Parent = Copy
-UITextSizeConstraint_8.MaxTextSize = 25
+UITextSizeConstraint_9.Parent = Copy
+UITextSizeConstraint_9.MaxTextSize = 25
 
 Paste.Name = "Paste"
 Paste.Parent = Executor
@@ -1107,11 +1096,11 @@ Paste.TextScaled = true
 Paste.TextSize = 12.000
 Paste.TextWrapped = true
 
-UICorner_29.CornerRadius = UDim.new(0, 2)
-UICorner_29.Parent = Paste
+UICorner_28.CornerRadius = UDim.new(0, 2)
+UICorner_28.Parent = Paste
 
-UITextSizeConstraint_9.Parent = Paste
-UITextSizeConstraint_9.MaxTextSize = 25
+UITextSizeConstraint_10.Parent = Paste
+UITextSizeConstraint_10.MaxTextSize = 25
 
 ExecuteClipboard.Name = "Execute Clipboard"
 ExecuteClipboard.Parent = Executor
@@ -1126,11 +1115,11 @@ ExecuteClipboard.TextScaled = true
 ExecuteClipboard.TextSize = 12.000
 ExecuteClipboard.TextWrapped = true
 
-UICorner_30.CornerRadius = UDim.new(0, 2)
-UICorner_30.Parent = ExecuteClipboard
+UICorner_29.CornerRadius = UDim.new(0, 2)
+UICorner_29.Parent = ExecuteClipboard
 
-UITextSizeConstraint_10.Parent = ExecuteClipboard
-UITextSizeConstraint_10.MaxTextSize = 25
+UITextSizeConstraint_11.Parent = ExecuteClipboard
+UITextSizeConstraint_11.MaxTextSize = 25
 
 SaveAsLocalScript.Name = "Save As Local Script"
 SaveAsLocalScript.Parent = Executor
@@ -1145,11 +1134,11 @@ SaveAsLocalScript.TextScaled = true
 SaveAsLocalScript.TextSize = 12.000
 SaveAsLocalScript.TextWrapped = true
 
-UICorner_31.CornerRadius = UDim.new(0, 2)
-UICorner_31.Parent = SaveAsLocalScript
+UICorner_30.CornerRadius = UDim.new(0, 2)
+UICorner_30.Parent = SaveAsLocalScript
 
-UITextSizeConstraint_11.Parent = SaveAsLocalScript
-UITextSizeConstraint_11.MaxTextSize = 25
+UITextSizeConstraint_12.Parent = SaveAsLocalScript
+UITextSizeConstraint_12.MaxTextSize = 25
 
 UIListLayout_2.Parent = Executor
 UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
@@ -1186,8 +1175,8 @@ Notification.BorderSizePixel = 0
 Notification.Size = UDim2.new(1, 0, 0.0799999982, 0)
 Notification.Visible = false
 
-UICorner_32.CornerRadius = UDim.new(0.100000001, 0)
-UICorner_32.Parent = Notification
+UICorner_31.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_31.Parent = Notification
 
 ImageLabel.Parent = Notification
 ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1199,8 +1188,8 @@ ImageLabel.Size = UDim2.new(0.995000005, 0, 0.970000029, 0)
 ImageLabel.Image = "rbxassetid://132641881125503"
 ImageLabel.ScaleType = Enum.ScaleType.Crop
 
-UICorner_33.CornerRadius = UDim.new(0.100000001, 0)
-UICorner_33.Parent = ImageLabel
+UICorner_32.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_32.Parent = ImageLabel
 
 CrypTB.Name = "CrypTB"
 CrypTB.Parent = ImageLabel
@@ -1241,8 +1230,8 @@ TextLabel_4.TextSize = 17.000
 TextLabel_4.TextWrapped = true
 TextLabel_4.TextYAlignment = Enum.TextYAlignment.Bottom
 
-UITextSizeConstraint_12.Parent = TextLabel_4
-UITextSizeConstraint_12.MaxTextSize = 18
+UITextSizeConstraint_13.Parent = TextLabel_4
+UITextSizeConstraint_13.MaxTextSize = 18
 
 TextLabel_5.Parent = ImageLabel
 TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1260,8 +1249,8 @@ TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 TextLabel_5.TextYAlignment = Enum.TextYAlignment.Top
 
-UITextSizeConstraint_13.Parent = TextLabel_5
-UITextSizeConstraint_13.MaxTextSize = 13
+UITextSizeConstraint_14.Parent = TextLabel_5
+UITextSizeConstraint_14.MaxTextSize = 13
 
 shadowHolder.Name = "shadowHolder"
 shadowHolder.Parent = Notification
@@ -1391,11 +1380,11 @@ UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.f
 UIGradient_11.Rotation = 92
 UIGradient_11.Parent = Frame_14
 
-UICorner_34.CornerRadius = UDim.new(0.140000001, 0)
-UICorner_34.Parent = Frame_14
+UICorner_33.CornerRadius = UDim.new(0.140000001, 0)
+UICorner_33.Parent = Frame_14
 
-UICorner_35.CornerRadius = UDim.new(0.151999995, 0)
-UICorner_35.Parent = Toggle
+UICorner_34.CornerRadius = UDim.new(0.151999995, 0)
+UICorner_34.Parent = Toggle
 
 UIAspectRatioConstraint_2.Parent = Toggle
 UIAspectRatioConstraint_2.DominantAxis = Enum.DominantAxis.Height
@@ -1588,10 +1577,11 @@ function Library:NewScript(p, t, d, k, img, code)
 		newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text = code
 	end)
 	
+	--[[
 	local NewSizer = #p:GetChildren() - 2
 	local AddCount = math.floor(#p:GetChildren()/3)
 	print(AddCount)
-	p.CanvasSize = UDim2.new(0, 0, 0, AddCount * 106)
+	p.CanvasSize = UDim2.new(0, 0, 0, AddCount * 106)]]
 end
 function Library:ClearGlobalScript()
     for _, a in pairs(newUI.MainShell.tabs["Search Scripts"].Frame.Frame.ScrollingFrame:GetChildren()) do
