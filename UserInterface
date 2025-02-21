@@ -91,6 +91,7 @@ local Search = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local TextBox = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 local Title_2 = Instance.new("TextLabel")
 local Subtitle = Instance.new("TextLabel")
 local Frame = Instance.new("Frame")
@@ -102,10 +103,11 @@ local UIPadding = Instance.new("UIPadding")
 local Script_2 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 local Edit = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local TextBox_2 = Instance.new("TextBox")
-local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 local Tabs = Instance.new("ScrollingFrame")
 local UIPadding_2 = Instance.new("UIPadding")
 local UIListLayout = Instance.new("UIListLayout")
@@ -140,7 +142,7 @@ local TextBox_3 = Instance.new("TextBox")
 local Search2 = Instance.new("Frame")
 local UICorner_15 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
-local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local LocalScripts = Instance.new("Frame")
 local ScrollingFrame_4 = Instance.new("ScrollingFrame")
 local UIGridLayout_3 = Instance.new("UIGridLayout")
@@ -188,22 +190,22 @@ local UICorner_25 = Instance.new("UICorner")
 local Executor = Instance.new("ScrollingFrame")
 local Execute = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
-local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 local Clear = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
-local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
 local Copy = Instance.new("TextButton")
 local UICorner_28 = Instance.new("UICorner")
-local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
 local Paste = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
-local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 local ExecuteClipboard = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
-local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
 local SaveAsLocalScript = Instance.new("TextButton")
 local UICorner_31 = Instance.new("UICorner")
-local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Notifier = Instance.new("Frame")
@@ -216,9 +218,9 @@ local UICorner_33 = Instance.new("UICorner")
 local CrypTB = Instance.new("ImageLabel")
 local TextButton_2 = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
-local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
 local TextLabel_5 = Instance.new("TextLabel")
-local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
 local shadowHolder = Instance.new("Frame")
 local umbraShadow = Instance.new("ImageLabel")
 local penumbraShadow = Instance.new("ImageLabel")
@@ -353,10 +355,15 @@ TextBox.Font = Enum.Font.SourceSans
 TextBox.PlaceholderText = "Script Name"
 TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
 TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
 
 UICorner_3.CornerRadius = UDim.new(0, 3)
 UICorner_3.Parent = TextBox
+
+UITextSizeConstraint_2.Parent = TextBox
+UITextSizeConstraint_2.MaxTextSize = 25
 
 Title_2.Name = "Title"
 Title_2.Parent = Editor
@@ -455,7 +462,12 @@ TextLabel.Size = UDim2.new(1, 0, 0.0948275849, 0)
 TextLabel.Font = Enum.Font.SourceSansBold
 TextLabel.Text = "Script List"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = TextLabel
+UITextSizeConstraint_3.MaxTextSize = 25
 
 Edit.Name = "Edit"
 Edit.Parent = Editor
@@ -485,16 +497,16 @@ TextBox_2.Size = UDim2.new(1, 0, 1, 0)
 TextBox_2.ClearTextOnFocus = false
 TextBox_2.Font = Enum.Font.SourceSans
 TextBox_2.MultiLine = true
+TextBox_2.Text = "--[[\\n Founder: reaperscripts\\n UI Dev: deposible\\n\\n Best Executor: Cryptic\\n]]\\n\\nprint('Cryptic Forever the #1 Executor')"
 TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_2.TextSize = 14.000
 TextBox_2.TextWrapped = true
 TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
 TextBox_2.TextYAlignment = Enum.TextYAlignment.Top
-TextBox_2.Text = "--[[\n   Founder: reaperscripts\n   UI Dev: deposible\n   Best Executor: Cryptic\n]]\n\nprint('Cryptic Forever the #1 Executor')"
 
-UITextSizeConstraint_2.Parent = TextBox_2
-UITextSizeConstraint_2.MaxTextSize = 18
-UITextSizeConstraint_2.MinTextSize = 15
+UITextSizeConstraint_4.Parent = TextBox_2
+UITextSizeConstraint_4.MaxTextSize = 18
+UITextSizeConstraint_4.MinTextSize = 15
 
 Tabs.Name = "Tabs"
 Tabs.Parent = Edit
@@ -745,8 +757,8 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
-UITextSizeConstraint_3.Parent = TextButton
-UITextSizeConstraint_3.MaxTextSize = 20
+UITextSizeConstraint_5.Parent = TextButton
+UITextSizeConstraint_5.MaxTextSize = 20
 
 LocalScripts.Name = "Local Scripts"
 LocalScripts.Parent = tabs
@@ -1039,8 +1051,8 @@ Execute.TextWrapped = true
 UICorner_26.CornerRadius = UDim.new(0, 2)
 UICorner_26.Parent = Execute
 
-UITextSizeConstraint_4.Parent = Execute
-UITextSizeConstraint_4.MaxTextSize = 25
+UITextSizeConstraint_6.Parent = Execute
+UITextSizeConstraint_6.MaxTextSize = 25
 
 Clear.Name = "Clear"
 Clear.Parent = Executor
@@ -1059,8 +1071,8 @@ Clear.TextWrapped = true
 UICorner_27.CornerRadius = UDim.new(0, 2)
 UICorner_27.Parent = Clear
 
-UITextSizeConstraint_5.Parent = Clear
-UITextSizeConstraint_5.MaxTextSize = 25
+UITextSizeConstraint_7.Parent = Clear
+UITextSizeConstraint_7.MaxTextSize = 25
 
 Copy.Name = "Copy"
 Copy.Parent = Executor
@@ -1079,8 +1091,8 @@ Copy.TextWrapped = true
 UICorner_28.CornerRadius = UDim.new(0, 2)
 UICorner_28.Parent = Copy
 
-UITextSizeConstraint_6.Parent = Copy
-UITextSizeConstraint_6.MaxTextSize = 25
+UITextSizeConstraint_8.Parent = Copy
+UITextSizeConstraint_8.MaxTextSize = 25
 
 Paste.Name = "Paste"
 Paste.Parent = Executor
@@ -1098,8 +1110,8 @@ Paste.TextWrapped = true
 UICorner_29.CornerRadius = UDim.new(0, 2)
 UICorner_29.Parent = Paste
 
-UITextSizeConstraint_7.Parent = Paste
-UITextSizeConstraint_7.MaxTextSize = 25
+UITextSizeConstraint_9.Parent = Paste
+UITextSizeConstraint_9.MaxTextSize = 25
 
 ExecuteClipboard.Name = "Execute Clipboard"
 ExecuteClipboard.Parent = Executor
@@ -1117,8 +1129,8 @@ ExecuteClipboard.TextWrapped = true
 UICorner_30.CornerRadius = UDim.new(0, 2)
 UICorner_30.Parent = ExecuteClipboard
 
-UITextSizeConstraint_8.Parent = ExecuteClipboard
-UITextSizeConstraint_8.MaxTextSize = 25
+UITextSizeConstraint_10.Parent = ExecuteClipboard
+UITextSizeConstraint_10.MaxTextSize = 25
 
 SaveAsLocalScript.Name = "Save As Local Script"
 SaveAsLocalScript.Parent = Executor
@@ -1136,8 +1148,8 @@ SaveAsLocalScript.TextWrapped = true
 UICorner_31.CornerRadius = UDim.new(0, 2)
 UICorner_31.Parent = SaveAsLocalScript
 
-UITextSizeConstraint_9.Parent = SaveAsLocalScript
-UITextSizeConstraint_9.MaxTextSize = 25
+UITextSizeConstraint_11.Parent = SaveAsLocalScript
+UITextSizeConstraint_11.MaxTextSize = 25
 
 UIListLayout_2.Parent = Executor
 UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
@@ -1229,8 +1241,8 @@ TextLabel_4.TextSize = 17.000
 TextLabel_4.TextWrapped = true
 TextLabel_4.TextYAlignment = Enum.TextYAlignment.Bottom
 
-UITextSizeConstraint_10.Parent = TextLabel_4
-UITextSizeConstraint_10.MaxTextSize = 18
+UITextSizeConstraint_12.Parent = TextLabel_4
+UITextSizeConstraint_12.MaxTextSize = 18
 
 TextLabel_5.Parent = ImageLabel
 TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1248,8 +1260,8 @@ TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 TextLabel_5.TextYAlignment = Enum.TextYAlignment.Top
 
-UITextSizeConstraint_11.Parent = TextLabel_5
-UITextSizeConstraint_11.MaxTextSize = 13
+UITextSizeConstraint_13.Parent = TextLabel_5
+UITextSizeConstraint_13.MaxTextSize = 13
 
 shadowHolder.Name = "shadowHolder"
 shadowHolder.Parent = Notification
@@ -1657,6 +1669,7 @@ function Library:ReloadLocalScripts()
 	for _, a in pairs(CustomListFile("Cryptic/Local Scripts")) do
 		local Script = Instance.new("TextButton")
 		local UICorner = Instance.new("UICorner")
+		local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 
 		Script.Name = "Script"
 		Script.Parent = newUI.MainShell.tabs.Editor.Frame.ScrollingFrame
@@ -1667,10 +1680,15 @@ function Library:ReloadLocalScripts()
 		Script.Font = Enum.Font.SourceSansBold
 		Script.Text = a:match('Cryptic\\Local Scripts\\(.*)')
 		Script.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Script.TextScaled = true
 		Script.TextSize = 12.000
-		
+		Script.TextWrapped = true
+
 		UICorner.CornerRadius = UDim.new(0, 2)
 		UICorner.Parent = Script
+
+		UITextSizeConstraint.Parent = Script
+		UITextSizeConstraint.MaxTextSize = 25
 
 		Script.MouseButton1Click:Connect(function()
 			newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text = readfile(a)
@@ -1692,21 +1710,16 @@ coroutine.resume(coroutine.create(function()
     Library:ChangeTabs(newUI.MainShell["Buttons Container"]["Miscellaneous"])
     Library:ChangeTabs(newUI.MainShell["Buttons Container"]["Local Scripts"])
     Library:ChangeTabs(newUI.MainShell["Buttons Container"]["Search Scripts"])
+	Library:CheckFiles()
+	Library:ReloadLocalScripts()
 
     for _, script in pairs(IntegratedScriptsLib) do
 		Library:NewScript(newUI.MainShell.tabs["Local Scripts"].ScrollingFrame, script.name, script.description, script.key, script.img, script.code)
 	end
 
-	Library:CheckFiles()
-	Library:ReloadLocalScripts()
-
 	if CustomIsFile('Cryptic/Main Tab.lua') and readfile('Cryptic/Main Tab.lua')~=nil then
 		TextBox_2.Text = readfile('Cryptic/Main Tab.lua')
 	end
-
-	TextBox_2.FocusLost:Connect(function()
-		writefile('Cryptic/Main Tab.lua', TextBox_2.Text)
-	end)
 end))
 -- Moving UI & Toggling
 coroutine.resume(coroutine.create(function()
@@ -1764,7 +1777,6 @@ coroutine.resume(coroutine.create(function()
 		end
 	end)
 end))
-
 -- Editor
 coroutine.resume(coroutine.create(function()
 	newUI.MainShell.Executor.Execute.MouseButton1Click:Connect(function()
@@ -1786,6 +1798,9 @@ coroutine.resume(coroutine.create(function()
 		CustomWrite("Cryptic/Local Scripts/Script #"..tostring(#CustomListFile("Cryptic/Local Scripts"))..".lua", newUI.MainShell.tabs.Editor.Edit.ScrollingFrame.TextBox.Text)
 
 		Library:ReloadLocalScripts()
+	end)
+	TextBox_2.FocusLost:Connect(function()
+		writefile('Cryptic/Main Tab.lua', TextBox_2.Text)
 	end)
 end))
 
