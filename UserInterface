@@ -1902,5 +1902,8 @@ coroutine.resume(coroutine.create(function()
 end))
 -- Miscellaneous
 coroutine.resume(coroutine.create(function()
-
+	game.Players.LocalPlayer.Idled:connect(function()
+		VirtualUser:CaptureController()
+		VirtualUser:ClickButton2(Vector2.new())
+	end)
 end))
